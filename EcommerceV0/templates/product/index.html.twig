@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProductController!{% endblock %}
+
+{% block body %}
+<div class="example-wrapper">
+
+    <h1>Hello ✅</h1>
+    <p>Voici la liste des produits</p>
+
+    <ul>
+        <li>
+            <a href="{{ path('product.show', { 'item': 't-shirt', 'size': 'S', 'id': 32 }) }}">
+                T-shirt enfant
+            </a>
+        </li>
+    </ul>
+
+</div>
+{% endblock %}
